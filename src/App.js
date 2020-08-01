@@ -19,7 +19,7 @@ function App() {
       setRestante(presupuestoRestante);
       setcrearGasto(false);
     }
-  }, [gasto]);
+  }, [gasto, crearGasto, gastos, restante]);
 
   return (
     <div className="container">

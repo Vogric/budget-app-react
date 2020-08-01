@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import Error from "./Error";
+import PropTypes from "prop-types";
 import shortid from "shortid";
+import Error from "./Error";
 
 const Formulario = ({ setGasto, setcrearGasto }) => {
   const [nombre, setNombre] = useState("");
@@ -55,6 +56,11 @@ Both inputs are required or incorrect quote"
       </div>
     </form>
   );
+};
+
+Formulario.propTypes = {
+  setGasto: PropTypes.func.isRequired,
+  setcrearGasto: PropTypes.func.isRequired,
 };
 
 export default Formulario;
