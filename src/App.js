@@ -22,7 +22,7 @@ function App() {
   }, [gasto, crearGasto, gastos, restante]);
 
   return (
-    <div className="container">
+    <div className="container animate__animated animate__fadeIn">
       <header>
         <h1>MyBudget</h1>
         <div className="contenido-principal contenido">
@@ -33,7 +33,7 @@ function App() {
               setPregunta={setPregunta}
             />
           ) : (
-            <div className="row">
+            <div className="row animate__animated animate__fadeIn">
               <div className="one-half column">
                 <Formulario setGasto={setGasto} setcrearGasto={setcrearGasto} />
               </div>
